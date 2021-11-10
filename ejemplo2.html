@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/cssflipclock.css">
+    </head>
+    
+    <body>
+
+        <audio autoplay controls> 
+            <source src="Maluma.mp3" type="audio/mp3">
+            Tu navegador no soporta HTML5 audio.
+        </audio>
+
+        color favorito: <input type="color">
+        elige un valor del 1 al 10: <input type="range" min="1" max="10">
+        fecha de nacimiento: <input type="date">
+
+        <input type="text" name="nombre" placeholder="nombre">
+        <input type="text" name="apellidos" placeholder="apellidos">
+
+        <div class="my-clock"></div>
+        <script src="/js/jquery/jquery.js"></script>
+        <script src="/js/flipclock/flipclock.min.js"></script>
+        <script>
+            var clock = new FlipClock($(' .my-clock'), {});
+        </script>
+    </body>
+</html>
